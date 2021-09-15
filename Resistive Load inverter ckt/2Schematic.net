@@ -1,0 +1,10 @@
+* C:\Users\MRADULA SINGH\OneDrive\Documents\LTspiceXVII\lab\Resistive Load inverter ckt\2Schematic.asc
+M1 N001 N002 0 0 NMOS l=180 w=270
+V1 N001 0 1.8V
+V2 N002 0 1.8V
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\MRADULA SINGH\OneDrive\Documents\LTspiceXVII\lib\cmp\standard.mos
+.dc V2 0V 1.8V 0.1
+.backanno
+.end
