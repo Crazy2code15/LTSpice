@@ -1,0 +1,12 @@
+* C:\Users\singh\Desktop\Analog IC Design Lab\Lab2\cmos_inverter\cmos-inverter-level54.asc
+Vds N001 0 1.8
+Vgs N002 0 1.8
+M1 N001 N002 output N001 P_50n l=50n w=500n
+M2 output N002 0 0 N_50n l=100n w=454n
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\Users\singh\Documents\LTspiceXVII\lib\cmp\standard.mos
+.dc Vgs 0 1.8 0.01
+.include cmos_models.txt
+.backanno
+.end
