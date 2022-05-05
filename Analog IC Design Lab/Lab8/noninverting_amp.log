@@ -27,9 +27,53 @@ Gmin = 1.43003e-013
 Gmin = 0
 Gmin stepping succeeded in finding the operating point.
 
+Semiconductor Device Operating Points:
+                        --- Diodes ---
+Name:    d:u1:15     d:u1:14     d:u1:17     d:u1:16     d:u1:13
+Model: u1:dbiasott u1:dbiasott  u1:dnlin    u1:d1meg   u1:dbiasdrop
+Id:     -1.32e-08   -1.32e-08    9.21e-10   -2.02e-14    2.80e-05
+Vd:     -1.32e+01   -1.32e+01    1.51e-03   -2.02e-08    1.77e+00
+Req:     1.00e-09    1.00e-09    1.25e-06    1.00e-06    1.00e-03
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
 
-Date: Mon Apr 18 11:20:51 2022
-Total elapsed time: 0.054 seconds.
+Name:    d:u1:12     d:u1:7      d:u1:11     d:u1:10     d:u1:8
+Model:    u1:dp     u1:dlimpr    u1:dnr      u1:desd     u1:desd
+Id:      3.20e-05   -8.38e-10    2.86e-04   -1.50e-08   -1.50e-08
+Vd:      3.00e+01   -8.38e-01    4.24e-02   -1.50e+01   -1.50e+01
+Req:     1.00e-03    1.00e-09    1.00e-01    1.00e-09    1.00e-09
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u1:1      d:u1:2      d:u1:4      d:u1:3      d:u1:9
+Model:   u1:desd    u1:dlim0    u1:dlimp     u1:dsbd     u1:dlim
+Id:     -1.50e-08   -1.51e-10    3.64e-09    2.86e-04    3.78e-08
+Vd:     -1.50e+01   -1.51e-03    3.64e-01    4.74e-01    3.03e-01
+Req:     1.00e-09    1.00e-07    1.00e-08    1.00e-02    1.25e-07
+CAP:     0.00e+00    0.00e+00    0.00e+00    0.00e+00    0.00e+00
+
+Name:    d:u1:6      d:u1:5
+Model:  u1:dlimn2   u1:dlimn1
+Id:      4.14e-08    9.42e-10
+Vd:      3.91e-01    3.91e-01
+Req:     2.00e-07    2.41e-09
+CAP:     0.00e+00    0.00e+00
+
+                        --- VDMOSFET Transistors ---
+Name:        m:u1:2      m:u1:1
+Model:        u1:pi       u1:ni
+Id:         -2.86e-04    2.84e-04
+Vgs:        -3.64e-01    3.91e-01
+Vds:        -1.45e+01    1.50e+01
+Vth:        -3.00e-01    3.00e-01
+Gm:          8.86e-03    6.26e-03
+Gds:         2.50e-06    2.47e-06
+Cgs:         0.00e+00    0.00e+00
+Cgd:         0.00e+00    0.00e+00
+Cbody:       0.00e+00    0.00e+00
+
+
+
+Date: Sat Apr 30 16:58:58 2022
+Total elapsed time: 0.057 seconds.
 
 tnom = 27
 temp = 27
@@ -42,6 +86,6 @@ rejected = 0
 matrix size = 22
 fillins = 12
 solver = Normal
-Matrix Compiler1:     103 opcodes
-Matrix Compiler2: off  [0.2]/0.2/0.4
+Matrix Compiler1: 1.79 KB object code size
+Matrix Compiler2: 2.49 KB object code size  0.4/0.6/[0.4]
 
